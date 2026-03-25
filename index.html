@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <title>游戏大厅</title>
     <style>
-        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #2c3e50; margin: 0; font-family: Arial, sans-serif; }
-        .btn { padding: 15px 40px; font-size: 24px; background: #27ae60; color: white; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: background 0.3s; }
-        .btn:hover { background: #2ecc71; }
+        body { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: #2c3e50; margin: 0; font-family: Arial, sans-serif; gap: 20px; }
+        .btn { padding: 15px 40px; font-size: 24px; color: white; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: transform 0.1s, background 0.3s; text-align: center; width: 200px; }
+        .btn:active { transform: scale(0.95); }
+        .btn-single { background: #27ae60; }
+        .btn-single:hover { background: #2ecc71; }
+        .btn-multi { background: #e67e22; }
+        .btn-multi:hover { background: #d35400; }
     </style>
 </head>
 <body>
-    <a href="game.html" class="btn">贪吃蛇游戏</a>
+    <h1 style="color: white; margin-bottom: 20px;">极简贪吃蛇</h1>
+    <a href="game.html" class="btn btn-single">单人游戏</a>
+    <a href="multiplayer.html" class="btn btn-multi">联机对抗</a>
 </body>
 </html>
